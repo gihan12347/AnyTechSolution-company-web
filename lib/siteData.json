@@ -1,59 +1,31 @@
 {
-  "company": {
-    "name": "Anytech Solution",
-    "nameHighlight": "Any",
-    "tagline": "Your Dream is Our Mission",
-    "legalName": "AnyTech Solution (PVT) Ltd",
-    "email": "info@anytechsolution.com",
-    "phone": "+971 XX XXX XXXX",
-    "whatsapp": "+971 XX XXX XXXX",
-    "location": "UAE & Global",
-    "copyright": "© 2025 AnyTech Solution. All rights reserved."
-  },
-  "navLinks": [
-    { "href": "#vision", "label": "About" },
-    { "href": "#services", "label": "Services" },
-    { "href": "#projects", "label": "Projects" },
-    { "href": "#support", "label": "Support" },
-    { "href": "#contact", "label": "Contact" }
-  ],
-  "hero": {
-    "badge": "IT Solutions & Network Specialists",
-    "title": "Your Dream Is",
-    "titleHighlight": "Our Mission",
-    "description": "AnyTech Solution delivers innovative IT, networking, and hardware solutions at affordable prices — building reliable technology that drives your business forward across the globe.",
-    "taglineQuote": "\"To become a leading IT solutions facilitator in the global marketplace\""
-  },
-  "stats": [
-    { "value": "200", "suffix": "+", "label": "Projects Delivered", "icon": "projects" },
-    { "value": "98", "suffix": "%", "label": "Client Satisfaction", "icon": "satisfaction" },
-    { "value": "24", "suffix": "/7", "label": "Support Coverage", "icon": "support247" },
-    { "value": "10", "suffix": "+", "label": "Years of Experience", "icon": "experience" }
-  ],
-  "heroFeatures": [
-    { "icon": "network", "label": "Network & Infrastructure" },
-    { "icon": "shield", "label": "Cybersecurity" },
-    { "icon": "cloud", "label": "Cloud Solutions" }
-  ],
-  "visionSection": {
-    "tag": "Who We Are",
-    "title": "Vision, Mission & Values",
-    "subtitle": "We exist to enhance business growth through technology solutions that create real, lasting competitive advantage.",
+  "contactSection": {
+    "tag": "Get In Touch",
+    "title": "Ready to Transform Your IT?",
+    "subtitle": "Tell us about your project. We respond within 24 hours with a clear, actionable plan.",
     "cards": [
       {
-        "icon": "target",
-        "title": "Our Vision",
-        "description": "To become a leading IT solutions facilitator in the global marketplace through providing well-reliable and quality service."
+        "icon": "email",
+        "label": "Email",
+        "valueKey": "email",
+        "linkType": "email"
       },
       {
-        "icon": "rocket",
-        "title": "Our Mission",
-        "description": "To serve our customers with the best innovative IT solutions at affordable prices, while keeping a healthy and long-term relationship with them."
+        "icon": "phone",
+        "label": "Phone",
+        "valueKey": "phone",
+        "linkType": "tel"
       },
       {
-        "icon": "globe",
-        "title": "Our Commitment",
-        "description": "To enhance business growth through technology, network, and hardware solutions that deliver market-defining quality and reliable competitive advantage to customers around the globe."
+        "icon": "whatsapp",
+        "label": "WhatsApp",
+        "valueKey": "whatsapp",
+        "linkType": "whatsapp"
+      },
+      {
+        "icon": "mapPin",
+        "label": "Location",
+        "valueKey": "location"
       }
     ]
   },
@@ -215,6 +187,58 @@
       }
     ]
   },
+  "projectsSection": {
+    "tag": "Our Work",
+    "title": "Successfully Delivered Projects",
+    "subtitle": "Real platforms we built for growing businesses — from fleet operations to full e-commerce management, designed to save time and drive revenue.",
+    "projects": [
+      {
+        "name": "FleetDesk",
+        "category": "Car Rental Management System",
+        "tagline": "Run your entire rental shop from one smart dashboard",
+        "description": "FleetDesk is a complete online car rental management platform that gives shop owners full control over their fleet, bookings, finances, and team — without spreadsheets or guesswork.",
+        "highlights": [
+          "Manage every vehicle and see available days at a glance",
+          "Revenue, expenses, and profit analytics in real time",
+          "Employee management and office expense tracking",
+          "Live rental tracking with service alerts and notifications"
+        ],
+        "screens": [
+          {
+            "label": "Analytics Dashboard",
+            "src": "/projects/fleetdesk.png",
+            "alt": "FleetDesk analytics dashboard showing revenue, bookings, and fleet utilization"
+          }
+        ]
+      },
+      {
+        "name": "Fasa Products",
+        "category": "E-Commerce & Business Management",
+        "websiteUrl": "https://fasafoods.com/",
+        "websiteLabel": "fasafoods.com",
+        "tagline": "Live e-commerce store with a powerful admin back office",
+        "description": "A full online business platform built for Fasa Products — a customer-facing storefront at fasafoods.com paired with an admin system to manage orders, inventory, and sales insights in one place.",
+        "highlights": [
+          "Live storefront at fasafoods.com with product catalog and special offers",
+          "Unified orders dashboard for pending, processing, and delivered orders",
+          "Inventory management with low-stock notifications",
+          "Best-selling product insights tracked by period"
+        ],
+        "screens": [
+          {
+            "label": "Online Store",
+            "src": "/projects/fasa-storefront.png",
+            "alt": "Fasa Products e-commerce website at fasafoods.com showing product catalog and special offers"
+          },
+          {
+            "label": "Orders Dashboard",
+            "src": "/projects/fasa-orders-dashboard.png",
+            "alt": "Fasa Products orders management dashboard with order tracking and status updates"
+          }
+        ]
+      }
+    ]
+  },
   "supportSection": {
     "tag": "Always Here for You",
     "title": "World-Class IT Support",
@@ -269,67 +293,106 @@
       "cta": "Contact Support"
     }
   },
-  "projectsSection": {
-    "tag": "Our Work",
-    "title": "Successfully Delivered Projects",
-    "subtitle": "Real platforms we built for growing businesses — from fleet operations to full e-commerce management, designed to save time and drive revenue.",
-    "projects": [
+  "navLinks": [
+    {
+      "href": "#vision",
+      "label": "About"
+    },
+    {
+      "href": "#services",
+      "label": "Services"
+    },
+    {
+      "href": "#projects",
+      "label": "Projects"
+    },
+    {
+      "href": "#support",
+      "label": "Support"
+    },
+    {
+      "href": "#contact",
+      "label": "Contact"
+    }
+  ],
+  "heroFeatures": [
+    {
+      "icon": "network",
+      "label": "Network & Infrastructure"
+    },
+    {
+      "icon": "shield",
+      "label": "Cybersecurity"
+    },
+    {
+      "icon": "cloud",
+      "label": "Cloud Solutions"
+    }
+  ],
+  "hero": {
+    "badge": "IT Solutions & Network Specialists",
+    "title": "Your Dream Is",
+    "titleHighlight": "Our Mission",
+    "description": "AnyTech Solution delivers innovative IT, networking, and hardware solutions at affordable prices — building reliable technology that drives your business forward across the globe.",
+    "taglineQuote": "\"To become a leading IT solutions facilitator in the global marketplace\""
+  },
+  "company": {
+    "legalName": "AnyTech Solution (PVT) Ltd",
+    "copyright": "© 2025 AnyTech Solution. All rights reserved.",
+    "nameHighlight": "Any",
+    "name": "Anytech Solution",
+    "phone": "+94 70 660 3503",
+    "tagline": "Your Dream is Our Mission",
+    "whatsapp": "+94 70 660 3503",
+    "location": "Sri Lanka & Global",
+    "email": "info@anytechsolution.com"
+  },
+  "visionSection": {
+    "tag": "Who We Are",
+    "title": "Vision, Mission & Values",
+    "subtitle": "We exist to enhance business growth through technology solutions that create real, lasting competitive advantage.",
+    "cards": [
       {
-        "name": "FleetDesk",
-        "category": "Car Rental Management System",
-        "tagline": "Run your entire rental shop from one smart dashboard",
-        "description": "FleetDesk is a complete online car rental management platform that gives shop owners full control over their fleet, bookings, finances, and team — without spreadsheets or guesswork.",
-        "highlights": [
-          "Manage every vehicle and see available days at a glance",
-          "Revenue, expenses, and profit analytics in real time",
-          "Employee management and office expense tracking",
-          "Live rental tracking with service alerts and notifications"
-        ],
-        "screens": [
-          {
-            "label": "Analytics Dashboard",
-            "src": "/projects/fleetdesk.png",
-            "alt": "FleetDesk analytics dashboard showing revenue, bookings, and fleet utilization"
-          }
-        ]
+        "icon": "target",
+        "title": "Our Vision",
+        "description": "To become a leading IT solutions facilitator in the global marketplace through providing well-reliable and quality service."
       },
       {
-        "name": "Fasa Products",
-        "category": "E-Commerce & Business Management",
-        "websiteUrl": "https://fasafoods.com/",
-        "websiteLabel": "fasafoods.com",
-        "tagline": "Live e-commerce store with a powerful admin back office",
-        "description": "A full online business platform built for Fasa Products — a customer-facing storefront at fasafoods.com paired with an admin system to manage orders, inventory, and sales insights in one place.",
-        "highlights": [
-          "Live storefront at fasafoods.com with product catalog and special offers",
-          "Unified orders dashboard for pending, processing, and delivered orders",
-          "Inventory management with low-stock notifications",
-          "Best-selling product insights tracked by period"
-        ],
-        "screens": [
-          {
-            "label": "Online Store",
-            "src": "/projects/fasa-storefront.png",
-            "alt": "Fasa Products e-commerce website at fasafoods.com showing product catalog and special offers"
-          },
-          {
-            "label": "Orders Dashboard",
-            "src": "/projects/fasa-orders-dashboard.png",
-            "alt": "Fasa Products orders management dashboard with order tracking and status updates"
-          }
-        ]
+        "icon": "rocket",
+        "title": "Our Mission",
+        "description": "To serve our customers with the best innovative IT solutions at affordable prices, while keeping a healthy and long-term relationship with them."
+      },
+      {
+        "icon": "globe",
+        "title": "Our Commitment",
+        "description": "To enhance business growth through technology, network, and hardware solutions that deliver market-defining quality and reliable competitive advantage to customers around the globe."
       }
     ]
   },
-  "contactSection": {
-    "tag": "Get In Touch",
-    "title": "Ready to Transform Your IT?",
-    "subtitle": "Tell us about your project. We respond within 24 hours with a clear, actionable plan.",
-    "cards": [
-      { "icon": "email", "label": "Email", "valueKey": "email", "linkType": "email" },
-      { "icon": "phone", "label": "Phone", "valueKey": "phone", "linkType": "tel" },
-      { "icon": "whatsapp", "label": "WhatsApp", "valueKey": "whatsapp", "linkType": "whatsapp" },
-      { "icon": "mapPin", "label": "Location", "valueKey": "location" }
-    ]
-  }
+  "stats": [
+    {
+      "value": "200",
+      "suffix": "+",
+      "label": "Projects Delivered",
+      "icon": "projects"
+    },
+    {
+      "value": "98",
+      "suffix": "%",
+      "label": "Client Satisfaction",
+      "icon": "satisfaction"
+    },
+    {
+      "value": "24",
+      "suffix": "/7",
+      "label": "Support Coverage",
+      "icon": "support247"
+    },
+    {
+      "value": "10",
+      "suffix": "+",
+      "label": "Years of Experience",
+      "icon": "experience"
+    }
+  ]
 }
