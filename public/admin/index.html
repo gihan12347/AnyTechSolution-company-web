@@ -1,27 +1,28 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AnyTech CMS Admin</title>
   </head>
 
   <body>
-    <!-- REQUIRED: Netlify Identity -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-    <!-- Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-
-    <!-- Auto redirect fix -->
     <script>
       if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
+        window.netlifyIdentity.on("init", function (user) {
+          if (user) return;
+
+          var hash = window.location.hash || "";
+
+          if (/recovery_token|invite_token|confirmation_token/.test(hash)) {
+            window.netlifyIdentity.open("login");
           }
+
+          window.netlifyIdentity.on("login", function () {
+            window.location.href = "/admin/";
+          });
         });
       }
     </script>

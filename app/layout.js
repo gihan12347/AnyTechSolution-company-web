@@ -1,5 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import NetlifyIdentityRedirect from "@/components/NetlifyIdentityRedirect";
 import "./globals.css";
 
 export const metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="min-h-screen">
+        <NetlifyIdentityRedirect />
         <Navbar />
         {children}
         <Footer />
