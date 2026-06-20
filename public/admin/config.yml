@@ -1,0 +1,194 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "siteData"
+    label: "Site Data"
+    files:
+      - name: "siteData"
+        label: "Website Content"
+        file: "lib/siteData.json"
+        format: "json"
+
+        fields:
+          - label: Company
+            name: company
+            widget: object
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Name Highlight, name: nameHighlight, widget: string }
+              - { label: Tagline, name: tagline, widget: string }
+              - { label: Legal Name, name: legalName, widget: string }
+              - { label: Email, name: email, widget: string }
+              - { label: Phone, name: phone, widget: string }
+              - { label: WhatsApp, name: whatsapp, widget: string }
+              - { label: Location, name: location, widget: string }
+              - { label: Copyright, name: copyright, widget: string }
+
+          - label: Nav Links
+            name: navLinks
+            widget: list
+            fields:
+              - { label: Href, name: href, widget: string }
+              - { label: Label, name: label, widget: string }
+
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Badge, name: badge, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Title Highlight, name: titleHighlight, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Tagline Quote, name: taglineQuote, widget: string }
+
+          - label: Stats
+            name: stats
+            widget: list
+            fields:
+              - { label: Value, name: value, widget: string }
+              - { label: Suffix, name: suffix, widget: string }
+              - { label: Label, name: label, widget: string }
+              - { label: Icon, name: icon, widget: string }
+
+          - label: Hero Features
+            name: heroFeatures
+            widget: list
+            fields:
+              - { label: Icon, name: icon, widget: string }
+              - { label: Label, name: label, widget: string }
+
+          - label: Vision Section
+            name: visionSection
+            widget: object
+            fields:
+              - { label: Tag, name: tag, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: text }
+
+              - label: Cards
+                name: cards
+                widget: list
+                fields:
+                  - { label: Icon, name: icon, widget: string }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: text }
+
+          - label: Services Section
+            name: servicesSection
+            widget: object
+            fields:
+              - { label: Tag, name: tag, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: text }
+
+              - label: Services
+                name: services
+                widget: list
+                fields:
+                  - { label: Icon, name: icon, widget: string }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: text }
+
+                  - label: Items
+                    name: items
+                    widget: list
+                    field: { label: Item, name: item, widget: string }
+
+          - label: Support Section
+            name: supportSection
+            widget: object
+            fields:
+              - { label: Tag, name: tag, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: text }
+
+              - label: Features
+                name: features
+                widget: list
+                fields:
+                  - { label: Icon, name: icon, widget: string }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: text }
+
+                  - label: Items
+                    name: items
+                    widget: list
+                    field: { label: Item, name: item, widget: string }
+
+              - label: Card
+                name: card
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Description, name: description, widget: text }
+
+                  - label: Availability
+                    name: availability
+                    widget: list
+                    field: { label: Item, name: item, widget: string }
+
+                  - { label: CTA, name: cta, widget: string }
+
+          - label: Projects Section
+            name: projectsSection
+            widget: object
+            fields:
+              - { label: Tag, name: tag, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: text }
+
+              - label: Projects
+                name: projects
+                widget: list
+                fields:
+                  - { label: Name, name: name, widget: string }
+                  - { label: Category, name: category, widget: string }
+                  - { label: Tagline, name: tagline, widget: string }
+                  - { label: Description, name: description, widget: text }
+
+                  - label: Website URL
+                    name: websiteUrl
+                    widget: string
+                    required: false
+
+                  - label: Website Label
+                    name: websiteLabel
+                    widget: string
+                    required: false
+
+                  - label: Highlights
+                    name: highlights
+                    widget: list
+                    field: { label: Item, name: item, widget: string }
+
+                  - label: Screens
+                    name: screens
+                    widget: list
+                    fields:
+                      - { label: Label, name: label, widget: string }
+                      - { label: Image, name: src, widget: image }
+                      - { label: Alt Text, name: alt, widget: string }
+
+          - label: Contact Section
+            name: contactSection
+            widget: object
+            fields:
+              - { label: Tag, name: tag, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: text }
+
+              - label: Cards
+                name: cards
+                widget: list
+                fields:
+                  - { label: Icon, name: icon, widget: string }
+                  - { label: Label, name: label, widget: string }
+                  - { label: Value Key, name: valueKey, widget: string }
+                  - { label: Link Type, name: linkType, widget: string, required: false }
