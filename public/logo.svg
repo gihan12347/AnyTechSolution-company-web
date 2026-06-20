@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="AnyTech Solution">
+  <defs>
+    <linearGradient id="logo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A2B45"/>
+      <stop offset="100%" stop-color="#0F1E35"/>
+    </linearGradient>
+    <linearGradient id="logo-accent" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2B8A6E"/>
+      <stop offset="100%" stop-color="#3AAB87"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="22" fill="url(#logo-bg)"/>
+  <rect x="8" y="8" width="104" height="104" rx="18" fill="none" stroke="rgba(58,171,135,0.25)" stroke-width="1"/>
+  <path d="M32 78 L52 42 L60 58 L68 42 L88 78" fill="none" stroke="url(#logo-accent)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="60" cy="82" r="5" fill="#fff"/>
+  <path d="M38 92 h44" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M44 96 h32" stroke="rgba(58,171,135,0.4)" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,335 @@
+{
+  "company": {
+    "name": "Anytech Solution",
+    "nameHighlight": "Any",
+    "tagline": "Your Dream is Our Mission",
+    "legalName": "AnyTech Solution (PVT) Ltd",
+    "email": "info@anytechsolution.com",
+    "phone": "+971 XX XXX XXXX",
+    "whatsapp": "+971 XX XXX XXXX",
+    "location": "UAE & Global",
+    "copyright": "© 2025 AnyTech Solution. All rights reserved."
+  },
+  "navLinks": [
+    { "href": "#vision", "label": "About" },
+    { "href": "#services", "label": "Services" },
+    { "href": "#projects", "label": "Projects" },
+    { "href": "#support", "label": "Support" },
+    { "href": "#contact", "label": "Contact" }
+  ],
+  "hero": {
+    "badge": "IT Solutions & Network Specialists",
+    "title": "Your Dream Is",
+    "titleHighlight": "Our Mission",
+    "description": "AnyTech Solution delivers innovative IT, networking, and hardware solutions at affordable prices — building reliable technology that drives your business forward across the globe.",
+    "taglineQuote": "\"To become a leading IT solutions facilitator in the global marketplace\""
+  },
+  "stats": [
+    { "value": "200", "suffix": "+", "label": "Projects Delivered", "icon": "projects" },
+    { "value": "98", "suffix": "%", "label": "Client Satisfaction", "icon": "satisfaction" },
+    { "value": "24", "suffix": "/7", "label": "Support Coverage", "icon": "support247" },
+    { "value": "10", "suffix": "+", "label": "Years of Experience", "icon": "experience" }
+  ],
+  "heroFeatures": [
+    { "icon": "network", "label": "Network & Infrastructure" },
+    { "icon": "shield", "label": "Cybersecurity" },
+    { "icon": "cloud", "label": "Cloud Solutions" }
+  ],
+  "visionSection": {
+    "tag": "Who We Are",
+    "title": "Vision, Mission & Values",
+    "subtitle": "We exist to enhance business growth through technology solutions that create real, lasting competitive advantage.",
+    "cards": [
+      {
+        "icon": "target",
+        "title": "Our Vision",
+        "description": "To become a leading IT solutions facilitator in the global marketplace through providing well-reliable and quality service."
+      },
+      {
+        "icon": "rocket",
+        "title": "Our Mission",
+        "description": "To serve our customers with the best innovative IT solutions at affordable prices, while keeping a healthy and long-term relationship with them."
+      },
+      {
+        "icon": "globe",
+        "title": "Our Commitment",
+        "description": "To enhance business growth through technology, network, and hardware solutions that deliver market-defining quality and reliable competitive advantage to customers around the globe."
+      }
+    ]
+  },
+  "servicesSection": {
+    "tag": "What We Offer",
+    "title": "Our Core Services",
+    "subtitle": "From network cabling to AI-powered infrastructure — comprehensive IT solutions tailored to your business needs.",
+    "services": [
+      {
+        "icon": "cable",
+        "title": "Network Cabling Solutions",
+        "description": "Full-scale network infrastructure design and installation, built to be efficient, clean, and perfectly suited to your firm's requirements.",
+        "items": [
+          "Design, installation & maintenance of networks",
+          "End-to-end structured cable systems",
+          "CAT5e, CAT6, CAT6A & CAT6+ copper cabling",
+          "Multi-mode & single-mode fiber optic cabling",
+          "Series 6 & Series 11 coaxial cabling",
+          "CCTV cabling & installation"
+        ]
+      },
+      {
+        "icon": "network",
+        "title": "Network Infrastructure",
+        "description": "Powerful network management for small to midsize businesses. We manage and monitor all your IT systems — no interruptions, no congestion, no downtime.",
+        "items": [
+          "LAN/WAN design, installation & configuration",
+          "Wireless & connectivity solutions",
+          "VoIP solutions",
+          "Load balancing & bandwidth management",
+          "Remote data center management"
+        ]
+      },
+      {
+        "icon": "cctv",
+        "title": "CCTV Systems",
+        "description": "Best-in-class security camera systems with remote monitoring. Analog & IP technology deployed to your exact specifications — protect what matters most.",
+        "items": [
+          "Analog & IP Cameras (Indoor & Outdoor)",
+          "CMOS, CCD & HD Cameras",
+          "NVR & DVR Recorders (4–24 channels)",
+          "Full-time & motion-triggered recording",
+          "Online monitoring from anywhere worldwide"
+        ]
+      },
+      {
+        "icon": "datacenter",
+        "title": "Data Center Construction",
+        "description": "End-to-end data center design and build. Structured for maximum uptime, scalability, and future-proof performance from day one.",
+        "items": [
+          "Full infrastructure planning & design",
+          "Power, cooling & cabling systems",
+          "Structured IT environment setup",
+          "Ongoing management & maintenance"
+        ]
+      },
+      {
+        "icon": "access",
+        "title": "Entry & Access Systems",
+        "description": "Comprehensive entry and access management solutions for commercial and residential properties — combining smart door access control with modern intercom and door phone systems.",
+        "items": [
+          "Biometric & card-based access control",
+          "Automated alerts & triggering features",
+          "Monitoring software to eliminate human error",
+          "Classic voice & VoIP-based video intercoms",
+          "Door phone systems (audio & video)",
+          "Commercial & residential installation",
+          "Integration with CCTV & security systems"
+        ]
+      },
+      {
+        "icon": "software",
+        "title": "Software Solutions",
+        "description": "Custom software development tailored to your business processes — from enterprise applications to lightweight automation tools that save time and reduce cost.",
+        "items": [
+          "Custom business application development",
+          "ERP & CRM system integration",
+          "Process automation & workflow tools",
+          "Software consulting & architecture",
+          "Legacy system modernisation"
+        ]
+      },
+      {
+        "icon": "web",
+        "title": "Web Development",
+        "description": "Professional, high-performance websites and web applications designed to represent your brand online and convert visitors into loyal customers.",
+        "items": [
+          "Business websites & landing pages",
+          "E-commerce platforms & online stores",
+          "Web portals & dashboards",
+          "CMS integration (WordPress, custom)",
+          "SEO-ready & mobile-responsive design"
+        ]
+      },
+      {
+        "icon": "email",
+        "title": "Email Solutions",
+        "description": "Reliable, professional email infrastructure for your business — hosted, managed, and secured so your team communicates without interruption.",
+        "items": [
+          "Business email hosting & setup",
+          "Microsoft 365 & Google Workspace",
+          "Email migration & domain configuration",
+          "Spam filtering & security policies",
+          "Email backup & archiving solutions"
+        ]
+      },
+      {
+        "icon": "cloud",
+        "title": "Cloud Solutions",
+        "description": "Scalable, secure cloud infrastructure that grows with your business. We plan, migrate, and manage your cloud environment from start to finish.",
+        "items": [
+          "Cloud migration & strategy planning",
+          "AWS, Azure & Google Cloud setup",
+          "Cloud storage & backup solutions",
+          "Hybrid & multi-cloud environments",
+          "Ongoing cloud monitoring & optimisation"
+        ]
+      },
+      {
+        "icon": "shield",
+        "title": "Cybersecurity Solutions",
+        "description": "Protect your business from evolving cyber threats with comprehensive security services — from firewall management to full vulnerability assessments and compliance support.",
+        "items": [
+          "Firewall setup, configuration & management",
+          "Endpoint protection & antivirus deployment",
+          "Network security monitoring & threat detection",
+          "Vulnerability assessments & penetration testing",
+          "Data loss prevention (DLP) solutions",
+          "Security awareness training for staff",
+          "Compliance support (ISO 27001, GDPR, NCA)",
+          "Incident response & recovery planning"
+        ]
+      },
+      {
+        "icon": "mobile",
+        "title": "Mobile App Development",
+        "description": "Custom iOS and Android mobile applications built for performance and user experience — from concept and design through to launch and ongoing support.",
+        "items": [
+          "Native iOS & Android app development",
+          "Cross-platform apps (Flutter, React Native)",
+          "UI/UX design & prototyping",
+          "API integration & backend connectivity",
+          "App Store & Play Store publishing",
+          "Post-launch maintenance & updates"
+        ]
+      },
+      {
+        "icon": "chart",
+        "title": "IT Consultancy",
+        "description": "Strategic IT guidance to help your business make the right technology decisions. From technology audits to digital transformation roadmaps — we are your trusted technology advisor.",
+        "items": [
+          "IT infrastructure audits & assessments",
+          "Digital transformation strategy & roadmaps",
+          "Technology budgeting & procurement advice",
+          "Vendor selection & management support",
+          "IT policy & governance frameworks",
+          "Business continuity & disaster recovery planning"
+        ]
+      }
+    ]
+  },
+  "supportSection": {
+    "tag": "Always Here for You",
+    "title": "World-Class IT Support",
+    "subtitle": "AnyTech understands how critical your IT systems are. We pride ourselves on always-available, best-in-class helpdesk and onsite support.",
+    "features": [
+      {
+        "icon": "monitor",
+        "title": "Help Desk Support",
+        "description": "Continuous service ensuring your critical IT systems and applications are always up and running. Problems resolved quickly by knowledgeable technicians.",
+        "items": [
+          "24×7 helpdesk support, 365 days a year",
+          "Chat-based and email-based support",
+          "Remote support for email, servers, PCs & networks",
+          "Fast handling of IT-related issues",
+          "Customized solutions per client need"
+        ]
+      },
+      {
+        "icon": "wrench",
+        "title": "Onsite Support",
+        "description": "When remote support isn't enough, AnyTech's onsite team is always available to bring your network back online with a fully managed, hands-on approach.",
+        "items": [
+          "Cabling & Wireless Solutions onsite",
+          "Recurring on-site services & project support",
+          "Full-Time Onsite IT Support (daily/weekly/monthly)",
+          "Seasonal Onsite IT Support for peak periods",
+          "On-site end-user desktop support"
+        ]
+      },
+      {
+        "icon": "shieldCheck",
+        "title": "Preventative Maintenance & Updates",
+        "description": "Proactive monitoring and scheduled maintenance so you never face unexpected downtime or system failures.",
+        "items": [
+          "24/7 real-time monitoring & automated alerts",
+          "Regular system health checks",
+          "Software & firmware updates",
+          "Day-to-day management support"
+        ]
+      }
+    ],
+    "card": {
+      "title": "Always Available.\nAlways Reliable.",
+      "description": "Our dedicated support team is standing by around the clock to ensure your business never skips a beat.",
+      "availability": [
+        "24 / 7 / 365 Help Desk",
+        "Remote & Onsite Response",
+        "Real-Time Monitoring",
+        "Preventative Maintenance",
+        "Customized SLA Plans"
+      ],
+      "cta": "Contact Support"
+    }
+  },
+  "projectsSection": {
+    "tag": "Our Work",
+    "title": "Successfully Delivered Projects",
+    "subtitle": "Real platforms we built for growing businesses — from fleet operations to full e-commerce management, designed to save time and drive revenue.",
+    "projects": [
+      {
+        "name": "FleetDesk",
+        "category": "Car Rental Management System",
+        "tagline": "Run your entire rental shop from one smart dashboard",
+        "description": "FleetDesk is a complete online car rental management platform that gives shop owners full control over their fleet, bookings, finances, and team — without spreadsheets or guesswork.",
+        "highlights": [
+          "Manage every vehicle and see available days at a glance",
+          "Revenue, expenses, and profit analytics in real time",
+          "Employee management and office expense tracking",
+          "Live rental tracking with service alerts and notifications"
+        ],
+        "screens": [
+          {
+            "label": "Analytics Dashboard",
+            "src": "/projects/fleetdesk.png",
+            "alt": "FleetDesk analytics dashboard showing revenue, bookings, and fleet utilization"
+          }
+        ]
+      },
+      {
+        "name": "Fasa Products",
+        "category": "E-Commerce & Business Management",
+        "websiteUrl": "https://fasafoods.com/",
+        "websiteLabel": "fasafoods.com",
+        "tagline": "Live e-commerce store with a powerful admin back office",
+        "description": "A full online business platform built for Fasa Products — a customer-facing storefront at fasafoods.com paired with an admin system to manage orders, inventory, and sales insights in one place.",
+        "highlights": [
+          "Live storefront at fasafoods.com with product catalog and special offers",
+          "Unified orders dashboard for pending, processing, and delivered orders",
+          "Inventory management with low-stock notifications",
+          "Best-selling product insights tracked by period"
+        ],
+        "screens": [
+          {
+            "label": "Online Store",
+            "src": "/projects/fasa-storefront.png",
+            "alt": "Fasa Products e-commerce website at fasafoods.com showing product catalog and special offers"
+          },
+          {
+            "label": "Orders Dashboard",
+            "src": "/projects/fasa-orders-dashboard.png",
+            "alt": "Fasa Products orders management dashboard with order tracking and status updates"
+          }
+        ]
+      }
+    ]
+  },
+  "contactSection": {
+    "tag": "Get In Touch",
+    "title": "Ready to Transform Your IT?",
+    "subtitle": "Tell us about your project. We respond within 24 hours with a clear, actionable plan.",
+    "cards": [
+      { "icon": "email", "label": "Email", "valueKey": "email", "linkType": "email" },
+      { "icon": "phone", "label": "Phone", "valueKey": "phone", "linkType": "tel" },
+      { "icon": "whatsapp", "label": "WhatsApp", "valueKey": "whatsapp", "linkType": "whatsapp" },
+      { "icon": "mapPin", "label": "Location", "valueKey": "location" }
+    ]
+  }
+}
