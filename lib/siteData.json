@@ -72,17 +72,6 @@
         ]
       },
       {
-        "icon": "datacenter",
-        "title": "Data Center Construction",
-        "description": "End-to-end data center design and build. Structured for maximum uptime, scalability, and future-proof performance from day one.",
-        "items": [
-          "Full infrastructure planning & design",
-          "Power, cooling & cabling systems",
-          "Structured IT environment setup",
-          "Ongoing management & maintenance"
-        ]
-      },
-      {
         "icon": "access",
         "title": "Entry & Access Systems",
         "description": "Comprehensive entry and access management solutions for commercial and residential properties — combining smart door access control with modern intercom and door phone systems.",
