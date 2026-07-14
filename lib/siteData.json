@@ -173,6 +173,17 @@
           "IT policy & governance frameworks",
           "Business continuity & disaster recovery planning"
         ]
+      },
+      {
+        "icon": "Network",
+        "title": "Reliable IT Support Services",
+        "description": "Ensuring your business technology runs smoothly with 24/7 expert support, proactive maintenance, and fast issue resolution.",
+        "items": [
+          "24/7 Help Desk Support with remote assistance via chat, email, and technical support for IT issues, systems, servers, PCs, and networks.",
+          "Onsite IT Support including network solutions, desktop support, hardware troubleshooting, project assistance, and scheduled onsite services.",
+          "Preventative Maintenance with real-time monitoring, system health checks, software updates, and proactive management to reduce downtime and improve reliability.",
+          "Customized IT Support Plans tailored to your business needs with flexible service levels and dedicated technical assistance."
+        ]
       }
     ]
   },
