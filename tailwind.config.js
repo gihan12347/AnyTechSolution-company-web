@@ -37,6 +37,8 @@ module.exports = {
         "float-main": "float-main 6s ease-in-out infinite",
         "float-badge": "float-badge 5s ease-in-out infinite",
         "float-logo": "float-logo 4s ease-in-out infinite",
+        "hero-in": "hero-in 0.9s ease-out both",
+        "hero-float": "hero-float 6s ease-in-out 0.9s infinite",
       },
       keyframes: {
         blink: {
@@ -54,6 +56,14 @@ module.exports = {
         "float-logo": {
           "0%, 100%": { transform: "translateY(0) scale(1)" },
           "50%": { transform: "translateY(-4px) scale(1.02)" },
+        },
+        "hero-in": {
+          "0%": { opacity: "0", transform: "translateY(18px) scale(0.97)" },
+          "100%": { opacity: "1", transform: "translateY(0) scale(1)" },
+        },
+        "hero-float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
         },
       },
     },
