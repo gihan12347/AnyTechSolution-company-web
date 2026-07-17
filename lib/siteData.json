@@ -32,7 +32,7 @@
   "servicesSection": {
     "tag": "What We Offer",
     "title": "Our Core Services",
-    "subtitle": "We deliver end-to-end IT solutions — from custom software and mobile apps to robust network infrastructure, reliable support, and seamless cloud migration — all built around your business goals.",
+    "subtitle": "We deliver end-to-end IT solutions from custom software and mobile apps to robust network infrastructure, reliable support, and seamless cloud migration all built around your business goals.",
     "services": [
       {
         "icon": "cable",
@@ -190,7 +190,7 @@
   "projectsSection": {
     "tag": "Our Work",
     "title": "Successfully Delivered Projects",
-    "subtitle": "Real platforms we built for growing businesses — from fleet operations to full e-commerce management, designed to save time and drive revenue.",
+    "subtitle": "Real platforms we built for growing businesses from fleet operations to full e-commerce management, designed to save time and drive revenue.",
     "projects": [
       {
         "name": "FleetDesk",
@@ -281,7 +281,7 @@
       }
     ],
     "card": {
-      "title": "Always Available.\nAlways Reliable.",
+      "title": "Always Available. Always Reliable.",
       "description": "Our dedicated support team is standing by around the clock to ensure your business never skips a beat.",
       "availability": [
         "24 / 7 / 365 Help Desk",
