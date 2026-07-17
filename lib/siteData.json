@@ -321,12 +321,12 @@
       "label": "Network & Infrastructure"
     },
     {
-      "icon": "shield",
-      "label": "Cybersecurity"
-    },
-    {
       "icon": "cloud",
       "label": "Cloud Solutions"
+    },
+    {
+      "icon": "software",
+      "label": "Software & Web Development"
     }
   ],
   "hero": {
