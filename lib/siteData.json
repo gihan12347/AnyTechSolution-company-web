@@ -26,11 +26,6 @@
         "icon": "mapPin",
         "label": "Location",
         "valueKey": "location"
-      },
-      {
-        "icon": "Youtube",
-        "label": "Youtube",
-        "valueKey": "Youtube"
       }
     ]
   },
@@ -363,7 +358,7 @@
     }
   ],
   "hero": {
-    "badge": "AnyTech Solution — IT, Software & Network Solutions Specialists",
+    "badge": "IT, Software & Network Solutions Specialists",
     "title": "Your Dream Is",
     "titleHighlight": "Our Mission",
     "description": "AnyTech Solutions delivers custom software, mobile apps, and robust network infrastructure paired with reliable support and seamless cloud migration to build smart, affordable technology that drives businesses forward, worldwide.",
