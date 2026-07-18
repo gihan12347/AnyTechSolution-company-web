@@ -18,7 +18,7 @@ function VMCard({ icon, title, description }) {
 
 export default function VisionMission() {
   return (
-    <section id="vision" className="border-t border-navy/10 bg-white py-12 sm:py-16 md:py-20 lg:py-[clamp(4rem,8vw,5.625rem)]">
+    <section id="vision" className="border-t border-navy/10 bg-white py-10 sm:py-12 md:py-14">
       <div className="mx-auto max-w-container px-4 sm:px-6 lg:px-8">
         <FadeUp>
           <SectionHeader

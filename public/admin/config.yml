@@ -87,19 +87,26 @@ collections:
               - { label: Tag, name: tag, widget: string }
               - { label: Title, name: title, widget: string }
               - { label: Subtitle, name: subtitle, widget: text }
+              - { label: Index Label, name: indexLabel, widget: string, required: false }
+              - { label: Footer Note, name: footerNote, widget: string, required: false }
 
-              - label: Services
-                name: services
+              - label: Categories
+                name: categories
                 widget: list
                 fields:
-                  - { label: Icon, name: icon, widget: string }
+                  - { label: ID, name: id, widget: string }
                   - { label: Title, name: title, widget: string }
-                  - { label: Description, name: description, widget: text }
+                  - { label: Subtitle, name: subtitle, widget: string }
 
-                  - label: Items
-                    name: items
+                  - label: Areas
+                    name: areas
                     widget: list
-                    field: { label: Item, name: item, widget: string }
+                    fields:
+                      - { label: Title, name: title, widget: string }
+                      - label: Items
+                        name: items
+                        widget: list
+                        field: { label: Item, name: item, widget: string }
 
           - label: Support Section
             name: supportSection

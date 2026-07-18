@@ -40,7 +40,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-dark to-[#14302a] py-12 text-center sm:py-16 md:py-20 lg:py-[clamp(4rem,8vw,5.625rem)]"
+      className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-dark to-[#14302a] py-10 text-center sm:py-12 md:py-14"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(43,138,110,0.15)_0%,transparent_50%)]" />
 

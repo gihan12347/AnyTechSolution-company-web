@@ -1,89 +1,111 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { servicesSection } from "@/lib/siteData";
 import SectionHeader from "@/components/ui/SectionHeader";
 import FadeUp from "@/components/ui/FadeUp";
-import Icon from "@/components/ui/Icon";
 import cn from "@/lib/cn";
 
-function ServiceCard({ icon, title, description, items }) {
-  const [open, setOpen] = useState(false);
+function AccordionItem({ category, open, onToggle }) {
+  const bodyRef = useRef(null);
+  const [maxHeight, setMaxHeight] = useState(0);
+  const areaCount = category.areas.length;
+
+  useEffect(() => {
+    const updateHeight = () => {
+      if (!bodyRef.current) return;
+      setMaxHeight(open ? bodyRef.current.scrollHeight : 0);
+    };
+
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+    return () => window.removeEventListener("resize", updateHeight);
+  }, [open, category]);
 
   return (
-    <article
-      className={cn(
-        "group flex h-full flex-col overflow-hidden rounded-2xl border bg-white p-6 shadow-card transition-all duration-300 sm:p-8 lg:p-9",
-        open
-          ? "border-teal/50 shadow-card-hover"
-          : "border-navy/10 hover:-translate-y-1 hover:border-teal/40 hover:shadow-card-hover"
-      )}
-    >
+    <div className={cn("border-b border-navy/10", open && "bg-teal/[0.02]")}>
       <button
         type="button"
-        onClick={() => setOpen((value) => !value)}
+        onClick={onToggle}
         aria-expanded={open}
-        aria-label={open ? `Hide details for ${title}` : `Show details for ${title}`}
-        className={cn(
-          "mb-5 flex h-12 w-12 items-center justify-center rounded-[14px] border transition-all duration-300 sm:mb-6 sm:h-[52px] sm:w-[52px]",
-          open
-            ? "scale-105 border-teal bg-teal text-white shadow-glow"
-            : "border-teal/25 bg-gradient-to-br from-teal/10 to-blue-900/5 text-teal hover:border-teal/50 hover:bg-teal/15"
-        )}
+        className="grid w-full grid-cols-[1fr_auto] items-center gap-3 px-1 py-5 text-left transition-colors hover:bg-teal/[0.03] sm:grid-cols-[48px_1fr_auto_28px] sm:gap-5 sm:py-6"
       >
-        <Icon name={icon} size={26} />
+        <span
+          className={cn(
+            "hidden font-mono text-xs tracking-wider sm:block",
+            open ? "font-semibold text-teal" : "text-muted/60"
+          )}
+        >
+          {category.id}
+        </span>
+
+        <span className="min-w-0">
+          <span className="block text-base font-semibold tracking-tight text-navy sm:text-[1.25rem]">
+            {category.title}
+          </span>
+          <span className="mt-1 block text-sm font-light text-muted">
+            {category.subtitle}
+          </span>
+        </span>
+
+        <span className="hidden whitespace-nowrap font-mono text-xs text-muted/60 sm:block">
+          {areaCount} {areaCount === 1 ? "area" : "areas"}
+        </span>
+
+        <span
+          className={cn(
+            "flex h-7 w-7 shrink-0 items-center justify-center text-teal transition-transform duration-300",
+            open && "rotate-45"
+          )}
+          aria-hidden="true"
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+              d="M8 1V15M1 8H15"
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+            />
+          </svg>
+        </span>
       </button>
-
-      <h3 className="mb-2 text-base font-bold text-navy sm:mb-3 sm:text-lg">{title}</h3>
-
-      <p
-        className={cn(
-          "text-sm font-light leading-relaxed text-muted transition-all duration-300",
-          !open && "line-clamp-3"
-        )}
-      >
-        {description}
-      </p>
 
       <div
-        className={cn(
-          "grid transition-all duration-300 ease-out",
-          open ? "mt-4 grid-rows-[1fr] opacity-100 sm:mt-5" : "mt-0 grid-rows-[0fr] opacity-0"
-        )}
+        className="overflow-hidden transition-[max-height] duration-300 ease-out"
+        style={{ maxHeight }}
       >
-        <div className="overflow-hidden">
-          <ul className="flex flex-col gap-2 border-t border-navy/10 pt-4">
-            {items.map((item) => (
-              <li
-                key={item}
-                className="relative pl-4 text-[0.8rem] text-muted before:absolute before:left-0 before:top-2 before:h-1.5 before:w-1.5 before:rounded-full before:bg-teal sm:text-[0.82rem]"
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
+        <div
+          ref={bodyRef}
+          className="grid grid-cols-1 gap-6 px-1 pb-7 pt-1 sm:grid-cols-2 sm:gap-8 sm:pl-16 lg:gap-10"
+        >
+          {category.areas.map((area) => (
+            <div key={area.title}>
+              <h4 className="mb-3 border-b border-navy/10 pb-2 text-xs font-semibold uppercase tracking-wider text-navy">
+                {area.title}
+              </h4>
+              <ul className="flex flex-col gap-2.5">
+                {area.items.map((item) => (
+                  <li
+                    key={item}
+                    className="relative pl-4 text-sm font-light leading-relaxed text-muted before:absolute before:left-0 before:top-2 before:h-1.5 before:w-1.5 before:rounded-sm before:bg-teal"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
-
-      <button
-        type="button"
-        onClick={() => setOpen((value) => !value)}
-        className="mt-4 inline-flex items-center gap-1.5 self-start text-xs font-semibold uppercase tracking-wider text-teal transition-colors hover:text-teal-light"
-      >
-        {open ? "Show less" : "View details"}
-        <Icon
-          name="arrowRight"
-          size={14}
-          className={cn("transition-transform duration-300", open && "rotate-90")}
-        />
-      </button>
-    </article>
+    </div>
   );
 }
 
 export default function Services() {
+  const [openId, setOpenId] = useState(null);
+
   return (
-    <section id="services" className="bg-slate-50 py-12 sm:py-16 md:py-20 lg:py-[clamp(4rem,8vw,5.625rem)]">
+    <section id="services" className="bg-slate-50 py-10 sm:py-12 md:py-14">
       <div className="mx-auto max-w-container px-4 sm:px-6 lg:px-8">
         <FadeUp>
           <SectionHeader
@@ -93,13 +115,20 @@ export default function Services() {
           />
         </FadeUp>
 
-        <div className="grid gap-4 sm:grid-cols-2 sm:gap-6 xl:grid-cols-3">
-          {servicesSection.services.map((service) => (
-            <FadeUp key={service.title}>
-              <ServiceCard {...service} />
-            </FadeUp>
-          ))}
-        </div>
+        <FadeUp>
+          <div className="border-t border-navy/10">
+            {servicesSection.categories.map((category) => (
+              <AccordionItem
+                key={category.id}
+                category={category}
+                open={openId === category.id}
+                onToggle={() =>
+                  setOpenId((current) => (current === category.id ? null : category.id))
+                }
+              />
+            ))}
+          </div>
+        </FadeUp>
       </div>
     </section>
   );
