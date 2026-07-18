@@ -20,7 +20,7 @@ export default function BrandLogo({ size = "nav" }) {
       {isNav && (
         <div className="min-w-0">
           <div className="truncate text-sm font-bold leading-tight text-white sm:text-[1.05rem]">
-            <em className="not-italic text-teal-glow">{company.nameHighlight}</em>
+            <em className="not-italic text-white">{company.nameHighlight}</em>
             tech Solution
           </div>
           <div className="hidden truncate text-[0.62rem] tracking-wide text-white/45 sm:block">
@@ -45,7 +45,7 @@ export function FooterBrand() {
         />
       </span>
       <div className="text-[0.95rem] font-bold text-white">
-        <em className="not-italic text-teal-glow">{company.nameHighlight}</em>
+        <em className="not-italic text-white">{company.nameHighlight}</em>
         tech Solution
       </div>
     </div>

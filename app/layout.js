@@ -1,5 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import SocialSidebar from "@/components/layout/SocialSidebar";
 import NetlifyIdentityRedirect from "@/components/NetlifyIdentityRedirect";
 import "./globals.css";
 
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-screen">
         <NetlifyIdentityRedirect />
         <Navbar />
+        <SocialSidebar />
         {children}
         <Footer />
       </body>
