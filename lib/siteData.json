@@ -26,6 +26,11 @@
         "icon": "mapPin",
         "label": "Location",
         "valueKey": "location"
+      },
+      {
+        "icon": "Youtube",
+        "label": "Youtube",
+        "valueKey": "Youtube"
       }
     ]
   },
@@ -244,6 +249,33 @@
       }
     ]
   },
+  "socialLinks": [
+    {
+      "icon": "facebook",
+      "label": "Facebook",
+      "href": "https://www.facebook.com/"
+    },
+    {
+      "icon": "linkedin",
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/"
+    },
+    {
+      "icon": "instagram",
+      "label": "Instagram",
+      "href": "https://www.instagram.com/"
+    },
+    {
+      "icon": "whatsapp",
+      "label": "WhatsApp",
+      "href": "https://wa.me/94706603503"
+    },
+    {
+      "icon": "email",
+      "label": "Email",
+      "href": "mailto:info@anytech.lk"
+    }
+  ],
   "supportSection": {
     "tag": "Always Here for You",
     "title": "World-Class IT Support",
@@ -348,33 +380,6 @@
     "location": "Sri Lanka",
     "email": "info@anytech.lk"
   },
-  "socialLinks": [
-    {
-      "icon": "facebook",
-      "label": "Facebook",
-      "href": "https://www.facebook.com/"
-    },
-    {
-      "icon": "linkedin",
-      "label": "LinkedIn",
-      "href": "https://www.linkedin.com/"
-    },
-    {
-      "icon": "instagram",
-      "label": "Instagram",
-      "href": "https://www.instagram.com/"
-    },
-    {
-      "icon": "whatsapp",
-      "label": "WhatsApp",
-      "href": "https://wa.me/94706603503"
-    },
-    {
-      "icon": "email",
-      "label": "Email",
-      "href": "mailto:info@anytech.lk"
-    }
-  ],
   "visionSection": {
     "tag": "Who We Are",
     "title": "Vision, Mission & Values",
