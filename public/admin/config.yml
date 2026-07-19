@@ -31,6 +31,15 @@ collections:
               - { label: Location, name: location, widget: string }
               - { label: Copyright, name: copyright, widget: string }
 
+          - label: Social Links
+            name: socialLinks
+            widget: list
+            summary: "{{label}} — {{href}}"
+            fields:
+              - { label: Icon, name: icon, widget: string, hint: "facebook | linkedin | instagram | whatsapp | email" }
+              - { label: Label, name: label, widget: string }
+              - { label: URL, name: href, widget: string }
+
           - label: Nav Links
             name: navLinks
             widget: list
