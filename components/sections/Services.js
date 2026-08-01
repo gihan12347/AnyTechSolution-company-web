@@ -31,15 +31,14 @@ export default function Services() {
       <div className="mx-auto max-w-container px-4 sm:px-6 lg:px-8">
         <FadeUp>
           <SectionHeader
-            tag={servicesSection.tag}
             title={servicesSection.title}
             subtitle={servicesSection.subtitle}
           />
         </FadeUp>
 
         <div className="grid gap-4 sm:grid-cols-2 sm:gap-6 xl:grid-cols-3">
-          {servicesSection.services.map((service) => (
-            <FadeUp key={service.title}>
+          {servicesSection.services.map((service, index) => (
+            <FadeUp key={service.title} delay={Math.min(index, 4) * 70}>
               <ServiceCard {...service} />
             </FadeUp>
           ))}

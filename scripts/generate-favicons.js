@@ -3,7 +3,7 @@ const path = require("path");
 const sharp = require("sharp");
 
 const root = path.join(__dirname, "..");
-const logoPath = path.join(root, "public", "logo.svg");
+const logoPath = path.join(root, "public", "logo.png");
 const publicDir = path.join(root, "public");
 const appDir = path.join(root, "app");
 

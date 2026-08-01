@@ -325,6 +325,16 @@
     "description": "AnyTech Solution delivers innovative IT, networking, and hardware solutions at affordable prices — building reliable technology that drives your business forward across the globe.",
     "taglineQuote": "\"To become a leading IT solutions facilitator in the global marketplace\""
   },
+  "heroSlides": [
+    {
+      "src": "/hero/hero-1.png",
+      "alt": "AnyTech Solution IT services"
+    },
+    {
+      "src": "/hero/hero-2.png",
+      "alt": "AnyTech Solution IT services"
+    }
+  ],
   "company": {
     "legalName": "AnyTech Solution (PVT) Ltd",
     "copyright": "© 2025 AnyTech Solution. All rights reserved.",

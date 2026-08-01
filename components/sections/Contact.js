@@ -13,7 +13,7 @@ function ContactCard({ icon, label, value, href }) {
       <div className="mb-2 flex justify-center text-teal-glow">
         <Icon name={icon} size={24} />
       </div>
-      <div className="mb-1 text-[0.6rem] font-semibold uppercase tracking-widest text-white/45 sm:text-xs">
+      <div className="mb-1 text-[0.6rem] font-semibold uppercase tracking-widest text-white/55 sm:text-xs">
         {label}
       </div>
       {href ? (
@@ -40,14 +40,13 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-dark to-[#14302a] py-12 text-center sm:py-16 md:py-20 lg:py-[clamp(4rem,8vw,5.625rem)]"
+      className="relative overflow-hidden bg-gradient-to-br from-navy via-navy-dark to-[#173045] py-12 text-center sm:py-16 md:py-20 lg:py-[clamp(4rem,8vw,5.625rem)]"
     >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(43,138,110,0.15)_0%,transparent_50%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(25,103,168,0.15)_0%,transparent_50%)]" />
 
       <div className="relative mx-auto max-w-container px-4 sm:px-6 lg:px-8">
         <FadeUp>
           <SectionHeader
-            tag={contactSection.tag}
             title={contactSection.title}
             subtitle={contactSection.subtitle}
             dark
@@ -55,13 +54,13 @@ export default function Contact() {
           />
         </FadeUp>
 
-        <FadeUp>
-          <div className="mx-auto mb-8 grid max-w-4xl grid-cols-1 gap-3 sm:mb-10 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
-            {contactSection.cards.map((card) => (
-              <ContactCard key={card.label} {...card} />
-            ))}
-          </div>
-        </FadeUp>
+        <div className="mx-auto mb-8 grid max-w-4xl grid-cols-1 gap-3 sm:mb-10 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
+          {contactSection.cards.map((card, index) => (
+            <FadeUp key={card.label} delay={index * 70}>
+              <ContactCard {...card} />
+            </FadeUp>
+          ))}
+        </div>
 
         <FadeUp>
           <div className="flex justify-center px-2">

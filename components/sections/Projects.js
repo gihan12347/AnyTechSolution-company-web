@@ -47,7 +47,6 @@ export default function Projects() {
       <div className="mx-auto max-w-container px-4 sm:px-6 lg:px-8">
         <FadeUp>
           <SectionHeader
-            tag={projectsSection.tag}
             title={projectsSection.title}
             subtitle={projectsSection.subtitle}
           />

@@ -36,7 +36,6 @@ export default function Support() {
       <div className="mx-auto max-w-container px-4 sm:px-6 lg:px-8">
         <FadeUp>
           <SectionHeader
-            tag={supportSection.tag}
             title={supportSection.title}
             subtitle={supportSection.subtitle}
           />
@@ -44,15 +43,15 @@ export default function Support() {
 
         <div className="grid items-start gap-8 md:gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
-            {supportSection.features.map((feature) => (
-              <FadeUp key={feature.title}>
+            {supportSection.features.map((feature, index) => (
+              <FadeUp key={feature.title} delay={index * 70}>
                 <SupportFeature {...feature} />
               </FadeUp>
             ))}
           </div>
 
           <FadeUp>
-            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-navy via-navy-dark to-[#1b3a2a] p-6 text-white shadow-2xl sm:rounded-3xl sm:p-8 lg:sticky lg:top-24 lg:p-12">
+            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-navy via-navy-dark to-[#173045] p-6 text-white shadow-2xl sm:rounded-3xl sm:p-8 lg:sticky lg:top-24 lg:p-12">
               <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-teal/20 blur-3xl" />
               <h3 className="relative mb-3 text-xl font-bold leading-snug sm:mb-4 sm:text-2xl">
                 {card.title.split("\n").map((line, index) => (
@@ -68,7 +67,7 @@ export default function Support() {
               <div className="relative mb-6 flex flex-col gap-3 sm:mb-8 sm:gap-4">
                 {card.availability.map((item) => (
                   <div key={item} className="flex items-center gap-3">
-                    <div className="h-2 w-2 shrink-0 rounded-full bg-teal-light shadow-[0_0_8px_#3aab87]" />
+                    <div className="h-2 w-2 shrink-0 rounded-full bg-teal-light shadow-[0_0_8px_#2082d5]" />
                     <span className="text-sm text-white/80">{item}</span>
                   </div>
                 ))}

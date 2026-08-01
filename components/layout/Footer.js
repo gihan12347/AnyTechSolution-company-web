@@ -18,7 +18,7 @@ export default function Footer() {
             </Link>
           ))}
         </div>
-        <div className="text-xs text-white/40 sm:text-sm md:text-right">{company.copyright}</div>
+        <div className="text-xs text-white/55 sm:text-sm md:text-right">{company.copyright}</div>
       </div>
     </footer>
   );

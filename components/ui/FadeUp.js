@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-export default function FadeUp({ children, className = "" }) {
+export default function FadeUp({ children, className = "", delay = 0 }) {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -26,7 +26,11 @@ export default function FadeUp({ children, className = "" }) {
   }, []);
 
   return (
-    <div ref={ref} className={`fade-up ${className}`.trim()}>
+    <div
+      ref={ref}
+      className={`fade-up ${className}`.trim()}
+      style={delay ? { transitionDelay: `${delay}ms` } : undefined}
+    >
       {children}
     </div>
   );

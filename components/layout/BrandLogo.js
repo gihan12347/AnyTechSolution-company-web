@@ -8,11 +8,11 @@ export default function BrandLogo({ size = "nav" }) {
   return (
     <>
       <Image
-        src="/logo.svg"
+        src="/logo.png"
         alt={`${company.legalName} logo`}
         width={isNav ? 40 : 38}
         height={isNav ? 40 : 38}
-        className="shrink-0 rounded-lg sm:h-11 sm:w-11"
+        className="h-auto w-auto shrink-0 rounded-lg"
         priority={isNav}
       />
       {isNav && (
@@ -21,7 +21,7 @@ export default function BrandLogo({ size = "nav" }) {
             <em className="not-italic text-teal-glow">{company.nameHighlight}</em>
             tech Solution
           </div>
-          <div className="hidden truncate text-[0.62rem] tracking-wide text-white/45 sm:block">
+          <div className="hidden truncate text-[0.62rem] leading-none tracking-wide text-white/55 sm:block">
             {company.tagline}
           </div>
         </div>
@@ -34,11 +34,11 @@ export function FooterBrand() {
   return (
     <div className="flex items-center justify-center gap-3 md:justify-start">
       <Image
-        src="/logo.svg"
+        src="/logo.png"
         alt={`${company.legalName} logo`}
         width={38}
         height={38}
-        className="rounded-lg"
+        className="h-auto w-auto rounded-lg"
       />
       <div className="text-[0.95rem] font-bold text-white">
         <em className="not-italic text-teal-glow">{company.nameHighlight}</em>

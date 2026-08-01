@@ -13,10 +13,10 @@ module.exports = {
           light: "#213354",
         },
         teal: {
-          DEFAULT: "#2b8a6e",
-          light: "#3aab87",
-          pale: "#e0f2ec",
-          glow: "#5ecba5",
+          DEFAULT: "#1967a8",
+          light: "#2082d5",
+          pale: "#ebf3fa",
+          glow: "#55a5e7",
         },
         muted: "#5a6880",
       },
@@ -28,20 +28,25 @@ module.exports = {
       },
       boxShadow: {
         card: "0 4px 24px rgba(26, 43, 69, 0.08)",
-        "card-hover": "0 12px 40px rgba(43, 138, 110, 0.15)",
+        "card-hover": "0 12px 40px rgba(25, 103, 168, 0.15)",
         nav: "0 1px 0 rgba(255,255,255,0.08)",
-        glow: "0 4px 20px rgba(43, 138, 110, 0.35)",
+        glow: "0 4px 20px rgba(25, 103, 168, 0.35)",
       },
       animation: {
         blink: "blink 2s infinite",
         "float-main": "float-main 6s ease-in-out infinite",
         "float-badge": "float-badge 5s ease-in-out infinite",
         "float-logo": "float-logo 4s ease-in-out infinite",
+        kenburns: "kenburns 8s cubic-bezier(0.16, 1, 0.3, 1) forwards",
       },
       keyframes: {
         blink: {
           "0%, 100%": { opacity: "1" },
           "50%": { opacity: "0.3" },
+        },
+        kenburns: {
+          "0%": { transform: "scale(1)" },
+          "100%": { transform: "scale(1.08)" },
         },
         "float-main": {
           "0%, 100%": { transform: "translateY(0)" },
