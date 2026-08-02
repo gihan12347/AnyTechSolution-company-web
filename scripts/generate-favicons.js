@@ -7,6 +7,8 @@ const logoPath = path.join(root, "public", "logo.png");
 const publicDir = path.join(root, "public");
 const appDir = path.join(root, "app");
 
+const white = { r: 255, g: 255, b: 255, alpha: 1 };
+
 const sizes = [
   { name: "favicon-16x16.png", size: 16 },
   { name: "favicon-32x32.png", size: 32 },
@@ -15,23 +17,22 @@ const sizes = [
   { name: "android-chrome-512x512.png", size: 512 },
 ];
 
+function makeIcon(size) {
+  return sharp(logoPath)
+    .resize(size, size, { fit: "contain", background: white })
+    .flatten({ background: white })
+    .png();
+}
+
 async function generate() {
-  const svg = fs.readFileSync(logoPath);
+  for (const { name, size } of sizes) {
+    await makeIcon(size).toFile(path.join(publicDir, name));
+  }
 
-  await Promise.all(
-    sizes.map(({ name, size }) =>
-      sharp(svg)
-        .resize(size, size, { fit: "contain", background: { r: 26, g: 43, b: 69, alpha: 1 } })
-        .png()
-        .toFile(path.join(publicDir, name))
-    )
-  );
-
-  const favicon32 = await sharp(svg).resize(32, 32).png().toBuffer();
-  await sharp(favicon32).toFile(path.join(publicDir, "favicon.ico"));
-
-  await sharp(svg).resize(32, 32).png().toFile(path.join(appDir, "icon.png"));
-  await sharp(svg).resize(180, 180).png().toFile(path.join(appDir, "apple-icon.png"));
+  await makeIcon(32).toFile(path.join(publicDir, "favicon.ico"));
+  await makeIcon(32).toFile(path.join(publicDir, "favicon.png"));
+  await makeIcon(32).toFile(path.join(appDir, "icon.png"));
+  await makeIcon(180).toFile(path.join(appDir, "apple-icon.png"));
 
   const manifest = {
     name: "AnyTech Solution",
@@ -49,7 +50,7 @@ async function generate() {
       },
     ],
     theme_color: "#1a2b45",
-    background_color: "#1a2b45",
+    background_color: "#ffffff",
     display: "standalone",
   };
 
@@ -58,7 +59,7 @@ async function generate() {
     `${JSON.stringify(manifest, null, 2)}\n`
   );
 
-  console.log("Favicons generated in public/ and app/");
+  console.log("Favicons generated from logo.png");
 }
 
 generate().catch((error) => {

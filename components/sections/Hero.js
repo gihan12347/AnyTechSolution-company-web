@@ -54,9 +54,9 @@ export default function Hero() {
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <Button href="#services" className="w-full sm:w-auto">
               Explore Services
-              <Icon name="arrowRight" size={18} />
+              <Icon name="arrowRight" size={16} />
             </Button>
-            <Button href="#contact" variant="outline" className="w-full sm:w-auto">
+            <Button href="#contact" variant="outline" className="w-full px-6 py-3 sm:w-auto">
               Contact Us
             </Button>
           </div>

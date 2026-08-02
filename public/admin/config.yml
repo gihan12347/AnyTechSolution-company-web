@@ -31,6 +31,15 @@ collections:
               - { label: Location, name: location, widget: string }
               - { label: Copyright, name: copyright, widget: string }
 
+          - label: Social Links
+            name: socialLinks
+            widget: list
+            summary: "{{label}} — {{href}}"
+            fields:
+              - { label: Icon, name: icon, widget: string, hint: "facebook | linkedin | instagram | whatsapp | email" }
+              - { label: Label, name: label, widget: string }
+              - { label: URL, name: href, widget: string }
+
           - label: Nav Links
             name: navLinks
             widget: list
@@ -87,19 +96,26 @@ collections:
               - { label: Tag, name: tag, widget: string }
               - { label: Title, name: title, widget: string }
               - { label: Subtitle, name: subtitle, widget: text }
+              - { label: Index Label, name: indexLabel, widget: string, required: false }
+              - { label: Footer Note, name: footerNote, widget: string, required: false }
 
-              - label: Services
-                name: services
+              - label: Categories
+                name: categories
                 widget: list
                 fields:
-                  - { label: Icon, name: icon, widget: string }
+                  - { label: ID, name: id, widget: string }
                   - { label: Title, name: title, widget: string }
-                  - { label: Description, name: description, widget: text }
+                  - { label: Subtitle, name: subtitle, widget: string }
 
-                  - label: Items
-                    name: items
+                  - label: Areas
+                    name: areas
                     widget: list
-                    field: { label: Item, name: item, widget: string }
+                    fields:
+                      - { label: Title, name: title, widget: string }
+                      - label: Items
+                        name: items
+                        widget: list
+                        field: { label: Item, name: item, widget: string }
 
           - label: Support Section
             name: supportSection

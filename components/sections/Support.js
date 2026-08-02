@@ -32,7 +32,7 @@ export default function Support() {
   const { card } = supportSection;
 
   return (
-    <section id="support" className="bg-slate-50 py-12 sm:py-16 md:py-20 lg:py-[clamp(4rem,8vw,5.625rem)]">
+    <section id="support" className="bg-slate-50 py-10 sm:py-12 md:py-14">
       <div className="mx-auto max-w-container px-4 sm:px-6 lg:px-8">
         <FadeUp>
           <SectionHeader
