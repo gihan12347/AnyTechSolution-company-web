@@ -1,5 +1,6 @@
 [build]
   command = "npm run build"
+  # Leave publish empty when using @netlify/plugin-nextjs (do not set to ".next" in Netlify UI)
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"

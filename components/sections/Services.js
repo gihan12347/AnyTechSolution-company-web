@@ -9,7 +9,8 @@ import cn from "@/lib/cn";
 function AccordionItem({ category, open, onToggle }) {
   const bodyRef = useRef(null);
   const [maxHeight, setMaxHeight] = useState(0);
-  const areaCount = category.areas.length;
+  const areas = category.areas || [];
+  const areaCount = areas.length;
 
   useEffect(() => {
     const updateHeight = () => {
@@ -78,13 +79,13 @@ function AccordionItem({ category, open, onToggle }) {
           ref={bodyRef}
           className="grid grid-cols-1 gap-6 px-1 pb-7 pt-1 sm:grid-cols-2 sm:gap-8 sm:pl-16 lg:gap-10"
         >
-          {category.areas.map((area) => (
+          {areas.map((area) => (
             <div key={area.title}>
               <h4 className="mb-3 border-b border-navy/10 pb-2 text-xs font-semibold uppercase tracking-wider text-navy">
                 {area.title}
               </h4>
               <ul className="flex flex-col gap-2.5">
-                {area.items.map((item) => (
+                {(area.items || []).map((item) => (
                   <li
                     key={item}
                     className="relative pl-4 text-sm font-light leading-relaxed text-muted before:absolute before:left-0 before:top-2 before:h-1.5 before:w-1.5 before:rounded-sm before:bg-teal"
@@ -103,27 +104,29 @@ function AccordionItem({ category, open, onToggle }) {
 
 export default function Services() {
   const [openId, setOpenId] = useState(null);
+  const categories = servicesSection.categories || [];
 
   return (
     <section id="services" className="bg-slate-50 py-10 sm:py-12 md:py-14">
       <div className="mx-auto max-w-container px-4 sm:px-6 lg:px-8">
         <FadeUp>
           <SectionHeader
+            tag={servicesSection.tag}
             title={servicesSection.title}
             subtitle={servicesSection.subtitle}
           />
         </FadeUp>
 
-        <div className="grid gap-4 sm:grid-cols-2 sm:gap-6 xl:grid-cols-3">
-          {servicesSection.services.map((service, index) => (
-            <FadeUp key={service.title} delay={Math.min(index, 4) * 70}>
-              <ServiceCard {...service} />
-            </FadeUp>
-          ))}
-        </div>
         <FadeUp>
+          <div className="mb-3 flex items-baseline gap-2 border-b border-navy/10 pb-3 font-mono text-xs text-muted/70">
+            <span className="font-semibold text-navy">05</span>
+            <span>categories —</span>
+            <span className="font-semibold text-navy">12</span>
+            <span>specializations</span>
+          </div>
+
           <div className="border-t border-navy/10">
-            {servicesSection.categories.map((category) => (
+            {categories.map((category) => (
               <AccordionItem
                 key={category.id}
                 category={category}
@@ -134,6 +137,13 @@ export default function Services() {
               />
             ))}
           </div>
+
+          {servicesSection.footerNote && (
+            <p className="mt-8 flex items-center gap-2 font-mono text-xs text-muted/70">
+              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-teal" aria-hidden="true" />
+              {servicesSection.footerNote}
+            </p>
+          )}
         </FadeUp>
       </div>
     </section>
