@@ -37,7 +37,7 @@ module.exports = {
         "float-main": "float-main 6s ease-in-out infinite",
         "float-badge": "float-badge 5s ease-in-out infinite",
         "float-logo": "float-logo 4s ease-in-out infinite",
-        kenburns: "kenburns 8s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+        kenburns: "kenburns 12s ease-in-out infinite alternate",
         "hero-in": "hero-in 0.9s ease-out both",
         "hero-float": "hero-float 6s ease-in-out 0.9s infinite",
       },

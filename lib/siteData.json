@@ -372,6 +372,18 @@
     {
       "src": "/hero/hero-2.png",
       "alt": "AnyTech Solution IT services"
+    },
+    {
+      "src": "/hero/hero-3.jpg",
+      "alt": "AnyTech Solution IT services"
+    },
+    {
+      "src": "/hero/hero-4.jpg",
+      "alt": "AnyTech Solution IT services"
+    },
+    {
+      "src": "/hero/hero-5.jpg",
+      "alt": "AnyTech Solution IT services"
     }
   ],
   "company": {

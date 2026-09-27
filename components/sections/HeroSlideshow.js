@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Icon from "@/components/ui/Icon";
 
-const AUTOPLAY_MS = 3000;
+const AUTOPLAY_MS = 4500;
 
 export default function HeroSlideshow({ slides }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -30,18 +30,17 @@ export default function HeroSlideshow({ slides }) {
         return (
           <div
             key={slide.src}
-            className={`absolute inset-0 overflow-hidden transition-opacity duration-[1500ms] ease-in-out motion-reduce:transition-none ${
+            className={`absolute inset-0 overflow-hidden transition-opacity duration-[1800ms] ease-in-out motion-reduce:transition-none ${
               isActive ? "opacity-100" : "opacity-0"
             }`}
           >
             <Image
-              key={`${slide.src}-${isActive}`}
               src={slide.src}
               alt={slide.alt}
               fill
               priority={index === 0}
               sizes="100vw"
-              className={`object-cover ${isActive ? "animate-kenburns" : ""} motion-reduce:animate-none motion-reduce:scale-100`}
+              className="object-cover animate-kenburns motion-reduce:animate-none motion-reduce:scale-100"
             />
           </div>
         );
